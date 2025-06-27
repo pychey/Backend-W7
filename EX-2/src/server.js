@@ -40,9 +40,7 @@ await Author.bulkCreate([
 // ======== Queries =========
 
 const books = await getBooksByAuthorName("Kim Ang");
-
 const newBook = await createBookForAuthor("Kim Ang", { title: 'Catte Card Game', publicationYear: 2025, pages: 170 });
-
 const authors = await listAuthorsWithBooks();
 
 console.log( books );
